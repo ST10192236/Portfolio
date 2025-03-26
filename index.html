@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Ultimate Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Montserrat:wght@500;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <h2 onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">MyPortfolio</h2>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#knowledge"><Kbd></Kbd>Knowledge</a></li>
+      <li><a href="#contact">Contact</a></li>
+</ul>
+  </nav>
+
+  <div class="burger">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+
+
+  <header>
+    <canvas id="particles"></canvas>
+    <img src="img.jpg" alt="My Face">
+    <div class="hero-text">
+      <h1>I'm a Developer, majoring in </h1>
+      <h2><span id="typed"></span></h2>
+    </div>
+  </header>
+
+  <section class="knowledge-section" id="knowledge">
+    <h2>Skills</h2>
+    <div class="timeline">
+      <div class="timeline-line"></div>
+      
+      <div class="knowledge-card">
+        <div class="icon">
+          <i class="fa-brands fa-html5"></i>
+        </div>
+        <div class="info">
+          <h3>HTML</h3>
+          <p>Clean, semantic markup for strong foundations.</p>
+        </div>
+      </div>
+      
+      <div class="knowledge-card">
+        <div class="icon">
+          <i class="fa-brands fa-css3-alt"></i>
+        </div>
+        <div class="info">
+          <h3>CSS</h3>
+          <p>Responsive, animated, and modern design layouts.</p>
+        </div>
+      </div>
+      
+      <div class="knowledge-card">
+        <div class="icon">
+          <i class="fa-brands fa-js"></i>
+        </div>
+        <div class="info">
+          <h3>JavaScript</h3>
+          <p>Interactivity, animations, and dynamic content.</p>
+        </div>
+      </div>
+      
+      <div class="knowledge-card">
+        <div class="icon">
+          <i class="fa-brands fa-react"></i>
+        </div>
+        <div class="info">
+          <h3>React</h3>
+          <p>Modern, fast UI building with component structures.</p>
+
+          
+        </div>
+      </div>
+  </section>
+
+  <section class="projects-container" id="projects">
+    <h2>MY PROJECTS</h2>
+    <div class="projects">
+      <div class="card" onclick="window.open('https://github.com/yourusername/project-one', '_blank')">
+        <h3>Project One</h3>
+        <p>A modern design showcasing creativity and innovation with smooth animations and cutting-edge visuals.</p>
+      </div>
+      <div class="card" onclick="window.open('https://github.com/yourusername/project-two', '_blank')">
+        <h3>Project Two</h3>
+        <p>Built with passion and modern technologies, demonstrating my skill in creating beautiful websites.</p>
+      </div>
+      <div class="card" onclick="window.open('https://github.com/yourusername/project-three', '_blank')">
+        <h3>Project Three</h3>
+        <p>A stunning portfolio piece that blends design with powerful interactivity and user experience.</p>
+      </div>
+    </div>
+   
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button class="submit-btn" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    Made with ❤️ to inspire.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="particles.js"></script>
+  <script src="script.js"></script>
+  <script>
+    new Typed('#typed', {
+      strings: ['Web Developement', 'Software Development'],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: true
+    });
+  </script>
+</body>
+</html>
+
